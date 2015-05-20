@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+     >
+     
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:hint="请输入网址"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:focusable="true"
+        android:id="@+id/et_url"
+         />
+    
+	  <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_popsure_selector"
+            android:textColor="@color/white"
+            android:text="清空"
+            android:layout_marginTop="20dip"
+            />
+	  <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_popsure_selector"
+            android:textColor="@color/white"
+            android:text="保存"
+            android:layout_marginTop="20dip"
+            />
+</LinearLayout>

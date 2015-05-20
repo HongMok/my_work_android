@@ -1,0 +1,24 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+      android:background="@drawable/loginbg"
+ >
+ 
+    <ImageView android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"></ImageView>
+    <TextView
+         android:id="@+id/tv_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="mx测试启动"
+         android:textSize="18sp"
+         android:layout_below="@+id/iv_logo"
+         android:layout_marginTop="20dip"
+         android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>

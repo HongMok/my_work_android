@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- situo start -->
+    <!-- 主题样式 -->
+    <style name="SituoTheme" parent="@android:style/Theme.Light">
+
+        <!-- <item name="android:listSeparatorTextViewStyle">@style/listSeparatorTextViewStyle</item> -->
+        <!-- <item name="android:listItemStyle">@style/listItemStyle</item> -->
+        <item name="android:listViewStyle">@style/situo_listViewStyle</item>
+        <item name="android:windowTitleSize">48dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_normal_color</item>
+        <item name="android:windowTitleBackgroundStyle">@style/situo_custTitleBar</item>
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+   <style name="SituoTheme_Spash" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+       <item name="android:windowBackground">@color/splash_bg</item>
+   </style>
+
+       <style name="group_TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+         <item name="android:textColor">@color/orange</item>
+    </style>
+    
+     <style name="notileTheme" parent="@android:style/Theme.Black.NoTitleBar">
+       <item name="android:listViewStyle">@style/situo_listViewStyle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/font_normal_color</item>
+    </style>
+   
+   
+   
+    <!-- 标题 样式 -->
+    <style name="situo_custTitleBar">
+        <item name="android:background">@color/title_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="situo_custTitleBar_TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+
+
+
+    <!-- 更多页面文字样式 -->
+    <style name="situo_more_TextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    
+    
+    
+    <!-- 列表样式 -->
+    <style name="situo_listViewStyle" parent="@android:attr/listViewStyle">
+        <item name="android:background">@color/grey_start</item>
+        <item name="android:dividerHeight">1dip</item>
+        <item name="android:divider">@color/line_color</item>
+        <!--
+      <item
+      name="android:listSelector"> @style/listItemStyle</item>
+        -->
+    </style>
+    <!-- situo end -->
+
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+	 <style name="dialog_up" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/dialog_up</item> 
+        <item name="@android:windowExitAnimation">@anim/dialog_down</item>
+    </style>  
+    
+	 <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">       
+                <item name="android:windowEnterAnimation">@anim/popup_anim</item>  
+        <item name="android:windowExitAnimation">@anim/popup_anim_exit</item>  
+     </style> 
+     
+    <style name="dialog_help_style">    
+	    <item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:backgroundDimEnabled">false</item>  
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->    
+  	</style>  
+  	
+     <style name="dialog_tipmore_style">    
+	    <item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:backgroundDimEnabled">false</item>  
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->    
+  	</style>
+</resources>

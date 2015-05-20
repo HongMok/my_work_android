@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:gravity="center_horizontal"
+    >
+    
+        <ImageView
+             android:layout_marginTop="40dip"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/login_icon"
+             />
+        
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/table_row_height"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/login_account"
+        android:layout_marginTop="40dip"
+        >
+        <ImageView
+             android:layout_marginLeft="15dip"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/login_icon_account"/>
+
+         <EditText
+             android:id="@+id/et_mobile"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="60dip"
+             android:background="@null"
+             android:gravity="left|center_vertical"
+             android:hint="@string/mobile_hint"
+             android:textSize="@dimen/normal_font" >
+
+         </EditText>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/table_row_height"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/login_password"
+        android:layout_marginTop="15dip"
+        >
+        <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dip"
+             android:background="@drawable/login_icon_password"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dip"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="@string/pwd_hint"
+            android:password="true"
+            android:textSize="@dimen/normal_font"
+            
+             />
+	</LinearLayout>
+	 <Button
+           android:id="@+id/btn_submit"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="@string/login"
+           android:background="@drawable/login_but"
+           android:textColor="@color/white"
+           android:textSize="@dimen/mid_font"
+           android:layout_marginLeft="20dip"
+           android:layout_marginRight="20dip"
+           android:layout_marginTop="30dip"></Button>
+	
+	</LinearLayout>
+</RelativeLayout>
