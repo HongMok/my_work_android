@@ -37,8 +37,8 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		ExtUtil.customeTitle(this, "主页",false);
-		initParam();
+		ExtUtil.customeTitle(this, "涓婚〉",false);
+		initParam();  //初始化
 		refreshUI();
 	}
 	
@@ -54,14 +54,14 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				CustomerModel user = mList.get(arg2);
 				Intent intent = new Intent(MainActivity.this,UserDetailActivity.class);
-				intent.putExtra(UserDetailActivity.PARAM_USER, user);//把用户传输过去
+				intent.putExtra(UserDetailActivity.PARAM_USER, user);//鎶婄敤鎴蜂紶杈撹繃鍘�
 				startActivity(intent);
 			}
 		});
 		
-		Button btn_title_right = (Button)this.findViewById(R.id.btn_title_right);//title的右边按钮
+		Button btn_title_right = (Button)this.findViewById(R.id.btn_title_right);//title鐨勫彸杈规寜閽�
 		btn_title_right.setVisibility(View.VISIBLE);
-		btn_title_right.setText("设置");
+		btn_title_right.setText("璁剧疆");
 		btn_title_right.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -78,7 +78,7 @@ public class MainActivity extends Activity {
 		for(int i=0;i<20;i++){
 			CustomerModel user = new CustomerModel();
 			user.customer_id = i+1;
-			user.short_name = "用户"+i;
+			user.short_name = "鐢ㄦ埛"+i;
 			if(0==i%3){
 				user.img = "http://d.hiphotos.baidu.com/image/h%3D200/sign=73290bc332adcbef1e3479069cae2e0e/6d81800a19d8bc3e12be34cd818ba61ea8d34506.jpg";
 			}
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 	}
 	
 	/**
-	 * 返回键，退出程序
+	 * 杩斿洖閿紝閫�鍑虹▼搴�
 	 */
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
 	}
 	
 	/**
-	 * 菜单栏
+	 * 鑿滃崟鏍�
 	 */
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
